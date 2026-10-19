@@ -24,6 +24,7 @@ body{
     padding :10px;
     width :100px;
     display: none;
+    top:35px;
 }
 .my_learning{
     position: relative;
@@ -90,6 +91,21 @@ body{
     bottom:100px;
     left :65px;
     padding:15px;
+    border:solid black 2px;
+    animation-name:zoom;
+    animation-duration: 1s;
+    opacity:0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .learn-more{
     background-color:#5022c3;
@@ -106,6 +122,12 @@ font-size: 17px;
 }
 .recommanded{
     padding: 10px;
+}
+.navbar-s3 p:hover,.section-s4 p:hover,.section-s5 p:hover{
+    background-color: grey;
+    color:violet;
+    border-radius: 5px;
+    padding: 5px;
 }
 .course-card{
     width: 240px;
